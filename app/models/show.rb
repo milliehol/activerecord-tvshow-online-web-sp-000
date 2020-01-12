@@ -1,24 +1,6 @@
 class Show < ActiveRecord::Base
   
-  
-def Show
-  show = Show.new
-  show.title = "This is a title."
-  show.save
-end
-
-def can_be_created_with_a_hash_of_attributes
-  # Initialize movie and then and save it
-  attributes = {
-      name: "The Sting",
-      day: 1973,
-      network: "George Roy Hill",
-      rating: "Paul Newman",
-  }
-  show = Show.create(attributes)
-end
-  
-    def Show::highest_rating
+  def Show::highest_rating
     Show.maximum("rating")
   end
 
