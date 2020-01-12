@@ -10,13 +10,12 @@ end
 def can_be_created_with_a_hash_of_attributes
   # Initialize movie and then and save it
   attributes = {
-      title: "The Sting",
-      release_date: 1973,
-      director: "George Roy Hill",
-      lead: "Paul Newman",
-      in_theaters: false
+      name: "The Sting",
+      day: 1973,
+      network: "George Roy Hill",
+      rating: "Paul Newman",
   }
-  movie = Movie.create(attributes)
+  show = Show.create(attributes)
 end
   
     def Show::highest_rating
